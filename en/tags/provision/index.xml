@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Provision on Deepoint D365 F&amp;O ERP Consulting China</title>
+    <link>https://www.deepoint.cn/en/tags/provision/</link>
+    <description>Recent content in Provision on Deepoint D365 F&amp;O ERP Consulting China</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 21 Sep 2023 11:42:38 +0800</lastBuildDate><atom:link href="https://www.deepoint.cn/en/tags/provision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Provision local development machine</title>
+      <link>https://www.deepoint.cn/en/blog/localdevmachineprovision/</link>
+      <pubDate>Thu, 21 Sep 2023 11:42:38 +0800</pubDate>
+      
+      <guid>https://www.deepoint.cn/en/blog/localdevmachineprovision/</guid>
+      <description>Sign in to Microsoft Lifecycle Services (LCS): https://lcs.dynamics.com/v2, Click ‘Shared Asset Library’.
+Click on ‘Downloadable VHD’. Download all the parts of the latest version on your local machine.
+Double click and execute the ‘*.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
+<html lang="zh-CN"><head>
   <meta charset="utf-8">
-  <title>Drop Us A Note</title>
+  <title>联系我们</title>
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="我们提供D365 F&amp;O ERP专家服务">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.118.2">
 
   <!-- Open Graph image and Twitter Card metadata -->
   <meta property="og:image" content="https://www.deepoint.cn/images/logo.png" />
-    <meta property="og:image:width" content="151">
-      <meta property="og:image:height" content="41">
+    <meta name="twitter:image" content="https://www.deepoint.cn/images/logo.png"/>
+        <meta name="twitter:card" content="summary_large_image">
+      <meta property="og:image:width" content="1056">
+      <meta property="og:image:height" content="346">
       <meta property="og:image:type" content="image/png">
-  <meta name="twitter:title" content="Drop Us A Note"/>
-  <meta name="twitter:description" content="this is meta description"/>
-  <meta property="og:title" content="Drop Us A Note" />
-<meta property="og:description" content="this is meta description" />
+  <meta name="twitter:title" content="联系我们"/>
+  <meta name="twitter:description" content="我们提供D365 F&amp;O ERP专家服务"/>
+  <meta property="og:title" content="联系我们" />
+<meta property="og:description" content="我们提供D365 F&amp;O ERP专家服务" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.deepoint.cn/contact/" /><meta property="article:section" content="" />
 
@@ -63,13 +65,13 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img src="/images/logo.png" alt="Deepoint | D365 F&amp;O Consulting" width="150px" class="img-responsive">
+              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="150px" class="img-responsive">
             </a>
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/project/">Project</a></li><li><a href="/blog/">Blog</a></li><li class="dropdown">
+              <li><a href="/">Home</a></li><li><a href="/about/">关于我们</a></li><li><a href="/project/">Project</a></li><li><a href="/blog/">博客</a></li><li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   More <span class="ion-ios-arrow-down"></span>
                 </a>
@@ -77,18 +79,16 @@
                   <li><a href="/service/">Service</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/faq/">FAQ</a></li>
                 </ul>
               </li>
-              <li><a href="/contact/" class="current">Contact</a></li>
+              <li><a href="/contact/" class="current">联系我们</a></li>
 
               
               <li>
                 <select id="select-language" onchange="location = this.value;">
-                  <option id="en" value="/contact/" selected>
-                    English
+                  <option id="cn" value="/contact/" selected>
+                    中文
                   </option>
-                  <option id="it" value="/it/contact/">
-                    Italiano
-                  </option><option id="de" value="/de/contact/">
-                    Deutsch
+                  <option id="en" value="/en/contact/">
+                    English
                   </option>
                 </select>
               </li>
@@ -109,8 +109,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>this is meta description</p>
+          <h1>联系我们</h1>
+          <p>我们提供D365 F&amp;O ERP专家服务</p>
         </div>
       </div>
     </div>
@@ -121,20 +121,20 @@
 <section class="contact-form">
   <div class="container">
     <div class="row">
-      <form method="POST" name="contact_en" action="/message_sent" netlify netlify-honeypot="nhp">
+      <form method="POST" name="contact_cn" action="/message_sent" netlify netlify-honeypot="nhp">
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
-              <label for="name" hidden>Your name</label>
-              <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
+              <label for="name" hidden>姓名</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="姓名" required>
             </div>
             <div class="form-group">
-              <label for="email" hidden>Your e-mail address</label>
-              <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="Your e-mail address" required>
+              <label for="email" hidden>邮件</label>
+              <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="邮件" required>
             </div>
             <div class="form-group">
-              <label for="subject" hidden>Subject</label>
-              <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject" required>
+              <label for="subject" hidden>主题</label>
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="主题" required>
             </div>
             <div class="form-group-h">
               <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
@@ -144,10 +144,10 @@
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group-2">
-              <label for="message" hidden>Message</label>
-              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+              <label for="message" hidden>留言</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="留言" required></textarea>
             </div>
-            <button class="btn btn-default" type="submit">Send message</button>
+            <button class="btn btn-default" type="submit">提交</button>
           </div>
         </div>
       </form>
@@ -155,28 +155,21 @@
     <div class="contact-box row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <h2>Address</h2>
+          <h2>地址</h2>
           <ul class="address-block">
             
-            <li><i class="ion-ios-location-outline"></i><div><strong>Themefisher</strong><br>
-North Main Street<br>
-Brooklyn, New South Wales<br>
-Australia</div></li>
+            <li><i class="ion-ios-location-outline"></i><div><strong>Deepoint Consulting</strong><br>
+Offices in Shanghai &amp; Shenzhen<br>
+China</div></li>
             <li><i class="ion-ios-email-outline"></i><span class="cloaked-e-mail" data-user="iJ.miJ" data-domain="nc.tniopeed"></span></li>
             <li><i class="ion-ios-telephone-outline"></i>&#43;86 17601321600</li>
           </ul>
           <ul class="social-icons">
-            <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li><li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li><li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li><li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li><li><a href="#"><i class="ion-social-twitter-outline"></i></a></li><li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+            <li><a href="#"><i class="ion-chatbubble-working"></i></a></li><li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li><li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
           </ul>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <div class="google-map">
-            <div class="map" id="map" data-latitude="51.5223477" data-longitude="-0.1622023" data-marker="/images/marker.png" data-marker-name="Deepoint | D365 F&amp;O Consulting"></div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -188,7 +181,7 @@ Australia</div></li>
         <div class="footer-menu">
           <ul>
             
-            <li><a href="/about/">About</a></li>
+            <li><a href="/about/">关于我们</a></li>
             
             <li><a href="/project/">Project</a></li>
             
@@ -198,7 +191,7 @@ Australia</div></li>
             
             <li><a href="/faq/">FAQ</a></li>
             
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/contact/">联系我们</a></li>
             
           </ul>
         </div>
@@ -208,10 +201,6 @@ Australia</div></li>
   </div>
 </footer>
 
-
-
-
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 
 
 
