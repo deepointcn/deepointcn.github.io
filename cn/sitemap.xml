@@ -144,8 +144,6 @@
                 href="https://www.deepoint.cn/author/mark-dinn/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/innovation/</loc>
-  </url><url>
     <loc>https://www.deepoint.cn/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -157,6 +155,8 @@
                 hreflang="zh-CN"
                 href="https://www.deepoint.cn/about/"
                 />
+  </url><url>
+    <loc>https://www.deepoint.cn/innovation/</loc>
   </url><url>
     <loc>https://www.deepoint.cn/service/</loc>
     <xhtml:link
