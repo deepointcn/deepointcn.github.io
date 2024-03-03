@@ -144,8 +144,6 @@
                 href="https://www.deepoint.cn/author/mark-dinn/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/innovation/</loc>
-  </url><url>
     <loc>https://www.deepoint.cn/service/</loc>
     <xhtml:link
                 rel="alternate"
@@ -159,8 +157,28 @@
                 />
   </url><url>
     <loc>https://www.deepoint.cn/project/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.deepoint.cn/en/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.deepoint.cn/project/"
+                />
   </url><url>
     <loc>https://www.deepoint.cn/about-us/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.deepoint.cn/en/about-us/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.deepoint.cn/about-us/"
+                />
   </url><url>
     <loc>https://www.deepoint.cn/contact/</loc>
     <xhtml:link
