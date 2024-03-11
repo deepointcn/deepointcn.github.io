@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
   <meta charset="utf-8">
-  <title>Latest News</title>
+  <title>Our Blogs</title>
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="Passion To Empower Our Customers &amp; Employees">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.118.2">
 
@@ -13,13 +13,13 @@
   <meta property="og:image" content="https://www.deepoint.cn/images/logo.png" />
     <meta name="twitter:image" content="https://www.deepoint.cn/images/logo.png"/>
         <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image:width" content="600">
-      <meta property="og:image:height" content="275">
+      <meta property="og:image:width" content="816">
+      <meta property="og:image:height" content="183">
       <meta property="og:image:type" content="image/png">
-  <meta name="twitter:title" content="Latest News"/>
-  <meta name="twitter:description" content="this is meta description"/>
-  <meta property="og:title" content="Latest News" />
-<meta property="og:description" content="this is meta description" />
+  <meta name="twitter:title" content="Our Blogs"/>
+  <meta name="twitter:description" content="Passion To Empower Our Customers &amp; Employees"/>
+  <meta property="og:title" content="Our Blogs" />
+<meta property="og:description" content="Passion To Empower Our Customers &amp; Employees" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.deepoint.cn/en/blog/" />
 
@@ -63,13 +63,13 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/en/">
-              <img src="/images/logo.png" alt="Deepoint D365 F&amp;O ERP Consulting China" width="150px" class="img-responsive">
+              <img src="/images/logo.png" alt="Deepoint D365 F&amp;O ERP Consulting China" width="250px" class="img-responsive">
             </a>
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/en/">Home</a></li><li><a href="/en/service/">Services</a></li><li><a href="/en/project/">References</a></li><li><a href="/en/blog/" class="current">Blog</a></li><li><a href="/en/about-us/">About us</a></li><li><a href="/en">More</a></li><li><a href="/en/contact/">Contact</a></li>
+              <li><a href="/en/">Home</a></li><li><a href="/en/service/">Services</a></li><li><a href="/en/project/">References</a></li><li><a href="/en/about-us/">About us</a></li><li><a href="/en/contact/">Contact</a></li><li><a href="/en/blog/" class="current">Blog</a></li>
 
               
               <li>
@@ -83,6 +83,7 @@
                 </select>
               </li>
               
+              <li class="telphone">Services@deepoint.cn</li>
             </ul>
           </div>
         </nav>
@@ -99,8 +100,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Latest News</h1>
-          <p>this is meta description</p>
+          <h1>Our Blogs</h1>
+          <p>Passion To Empower Our Customers &amp; Employees</p>
         </div>
       </div>
     </div>
@@ -200,9 +201,37 @@ Double click and execute the ‘*.</p>
             
           </ul>
         </div>
-        <p class="copyright"></p>
       </div>
     </div>
+    <div class="info">
+      <div class="column1">
+        <img src="/images/deepoint-logo.png" alt="">
+      </div>
+      <div class="column2">
+        <img src="/images/microsoft-partner.png" alt="">
+      </div>
+      <div class="column3">
+        <p>联系我们</p>
+        <p>Jim.Ji@deepoint.cn</p>
+        <p>+86 17601321600</p>
+        <div class="connection">
+          <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
+          <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
+          <img class="connection-icon" id="weChat" src="/images/icon-connection-3.png" alt="">
+          <img class="qrcode" id="qrcode" src="/images/icon-weChat-qrcode.jpg" alt="">
+        </div>
+      </div>
+      <div class="column4">
+        <p>地址</p>
+        <p>Shanghai Office<BR>
+          1st Luonan village, building 44 room 501, Shanghai<BR>
+          
+          Shenzhen Office<BR>
+          Room 604 Building 9, TaoYuanJu 1st District Taoyuan Community, Shenzhen<BR>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">Copyright 2024 © Deepoint Consulting. All Rights Reserved.</div>
   </div>
 </footer>
 
@@ -247,6 +276,14 @@ Double click and execute the ‘*.</p>
         cookieBox.classList.add('cookie-box-hide');
       };
     }
+    const weChat = document.getElementById('weChat');
+    let qrcode = document.getElementById('qrcode');
+    weChat.addEventListener('mouseover', function() {
+      qrcode.style.display = 'block';
+    })
+    weChat.addEventListener('mouseout', function() {
+      qrcode.style.display = 'none';
+    })
   })(jQuery);
 </script>
 

@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://www.deepoint.cn/images/logo.png" />
     <meta name="twitter:image" content="https://www.deepoint.cn/images/logo.png"/>
         <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image:width" content="600">
-      <meta property="og:image:height" content="275">
+      <meta property="og:image:width" content="816">
+      <meta property="og:image:height" content="183">
       <meta property="og:image:type" content="image/png">
   <meta name="twitter:title" content="Mark Dinn"/>
   <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet. Donec nisi dolor, consequat vel pretium id, auctor in dui."/>
@@ -65,7 +65,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="150px" class="img-responsive">
+              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="250px" class="img-responsive">
             </a>
           </div>
           
@@ -85,6 +85,7 @@
                 </select>
               </li>
               
+              <li class="telphone">Services@deepoint.cn</li>
             </ul>
           </div>
         </nav>
@@ -170,9 +171,37 @@ Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac
             
           </ul>
         </div>
-        <p class="copyright"></p>
       </div>
     </div>
+    <div class="info">
+      <div class="column1">
+        <img src="/images/deepoint-logo.png" alt="">
+      </div>
+      <div class="column2">
+        <img src="/images/microsoft-partner.png" alt="">
+      </div>
+      <div class="column3">
+        <p>联系我们</p>
+        <p>Jim.Ji@deepoint.cn</p>
+        <p>+86 17601321600</p>
+        <div class="connection">
+          <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
+          <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
+          <img class="connection-icon" id="weChat" src="/images/icon-connection-3.png" alt="">
+          <img class="qrcode" id="qrcode" src="/images/icon-weChat-qrcode.jpg" alt="">
+        </div>
+      </div>
+      <div class="column4">
+        <p>地址</p>
+        <p>Shanghai Office<BR>
+          1st Luonan village, building 44 room 501, Shanghai<BR>
+          
+          Shenzhen Office<BR>
+          Room 604 Building 9, TaoYuanJu 1st District Taoyuan Community, Shenzhen<BR>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">Copyright 2024 © Deepoint Consulting. All Rights Reserved.</div>
   </div>
 </footer>
 
@@ -217,6 +246,14 @@ Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac
         cookieBox.classList.add('cookie-box-hide');
       };
     }
+    const weChat = document.getElementById('weChat');
+    let qrcode = document.getElementById('qrcode');
+    weChat.addEventListener('mouseover', function() {
+      qrcode.style.display = 'block';
+    })
+    weChat.addEventListener('mouseout', function() {
+      qrcode.style.display = 'none';
+    })
   })(jQuery);
 </script>
 

@@ -141,18 +141,6 @@
                 href="https://www.deepoint.cn/en/contact/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/en/service/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/service/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/service/"
-                />
-  </url><url>
     <loc>https://www.deepoint.cn/en/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -175,6 +163,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://www.deepoint.cn/en/author/mark-dinn/"
+                />
+  </url><url>
+    <loc>https://www.deepoint.cn/en/service/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.deepoint.cn/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.deepoint.cn/en/service/"
                 />
   </url><url>
     <loc>https://www.deepoint.cn/en/project/</loc>

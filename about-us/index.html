@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head>
   <meta charset="utf-8">
-  <title>深点咨询团队简介</title>
+  <title>深点咨询简介</title>
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Passion to empower our customers and employees">
+  <meta name="description" content="Passion To Empower Our Customers &amp; Employees">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.118.2">
 
@@ -13,13 +13,13 @@
   <meta property="og:image" content="https://www.deepoint.cn/images/logo.png" />
     <meta name="twitter:image" content="https://www.deepoint.cn/images/logo.png"/>
         <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image:width" content="600">
-      <meta property="og:image:height" content="275">
+      <meta property="og:image:width" content="816">
+      <meta property="og:image:height" content="183">
       <meta property="og:image:type" content="image/png">
-  <meta name="twitter:title" content="深点咨询团队简介"/>
-  <meta name="twitter:description" content="Passion to empower our customers and employees"/>
-  <meta property="og:title" content="深点咨询团队简介" />
-<meta property="og:description" content="Passion to empower our customers and employees" />
+  <meta name="twitter:title" content="深点咨询简介"/>
+  <meta name="twitter:description" content="Passion To Empower Our Customers &amp; Employees"/>
+  <meta property="og:title" content="深点咨询简介" />
+<meta property="og:description" content="Passion To Empower Our Customers &amp; Employees" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.deepoint.cn/about-us/" /><meta property="article:section" content="" />
 
@@ -65,7 +65,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="150px" class="img-responsive">
+              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="250px" class="img-responsive">
             </a>
           </div>
           
@@ -85,6 +85,7 @@
                 </select>
               </li>
               
+              <li class="telphone">Services@deepoint.cn</li>
             </ul>
           </div>
         </nav>
@@ -101,8 +102,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>深点咨询团队简介</h1>
-          <p>Passion to empower our customers and employees</p>
+          <h1>深点咨询简介</h1>
+          <p>Passion To Empower Our Customers &amp; Employees</p>
         </div>
       </div>
     </div>
@@ -234,9 +235,37 @@
             
           </ul>
         </div>
-        <p class="copyright"></p>
       </div>
     </div>
+    <div class="info">
+      <div class="column1">
+        <img src="/images/deepoint-logo.png" alt="">
+      </div>
+      <div class="column2">
+        <img src="/images/microsoft-partner.png" alt="">
+      </div>
+      <div class="column3">
+        <p>联系我们</p>
+        <p>Jim.Ji@deepoint.cn</p>
+        <p>+86 17601321600</p>
+        <div class="connection">
+          <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
+          <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
+          <img class="connection-icon" id="weChat" src="/images/icon-connection-3.png" alt="">
+          <img class="qrcode" id="qrcode" src="/images/icon-weChat-qrcode.jpg" alt="">
+        </div>
+      </div>
+      <div class="column4">
+        <p>地址</p>
+        <p>Shanghai Office<BR>
+          1st Luonan village, building 44 room 501, Shanghai<BR>
+          
+          Shenzhen Office<BR>
+          Room 604 Building 9, TaoYuanJu 1st District Taoyuan Community, Shenzhen<BR>
+        </p>
+      </div>
+    </div>
+    <div class="copyright">Copyright 2024 © Deepoint Consulting. All Rights Reserved.</div>
   </div>
 </footer>
 
@@ -281,6 +310,14 @@
         cookieBox.classList.add('cookie-box-hide');
       };
     }
+    const weChat = document.getElementById('weChat');
+    let qrcode = document.getElementById('qrcode');
+    weChat.addEventListener('mouseover', function() {
+      qrcode.style.display = 'block';
+    })
+    weChat.addEventListener('mouseout', function() {
+      qrcode.style.display = 'none';
+    })
   })(jQuery);
 </script>
 
