@@ -2,21 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.deepoint.cn/en/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/"
-                />
+    <loc>https://www.deepoint.cn/en/blog/</loc>
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
   </url><url>
     <loc>https://www.deepoint.cn/en/categories/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -28,47 +18,24 @@
                 href="https://www.deepoint.cn/en/categories/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/en/blog/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
+    <loc>https://www.deepoint.cn/en/</loc>
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://www.deepoint.cn/blog/"
+                href="https://www.deepoint.cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://www.deepoint.cn/en/blog/"
+                href="https://www.deepoint.cn/en/"
                 />
   </url><url>
     <loc>https://www.deepoint.cn/en/tags/provision/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/tags/provision/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/tags/provision/"
-                />
-  </url><url>
-    <loc>https://www.deepoint.cn/en/blog/localdevmachineprovision/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/blog/localdevmachineprovision/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/blog/localdevmachineprovision/"
-                />
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
   </url><url>
     <loc>https://www.deepoint.cn/en/tags/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -81,17 +48,13 @@
                 />
   </url><url>
     <loc>https://www.deepoint.cn/en/categories/techical-development/</loc>
-    <lastmod>2023-09-21T11:42:38+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/categories/techical-development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/categories/techical-development/"
-                />
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
+  </url><url>
+    <loc>https://www.deepoint.cn/en/blog/upgradelocaldevmachine/</loc>
+    <lastmod>2023-09-08T11:00:28+08:00</lastmod>
+  </url><url>
+    <loc>https://www.deepoint.cn/en/blog/localdevmachineprovision/</loc>
+    <lastmod>2023-09-01T11:00:18+08:00</lastmod>
   </url><url>
     <loc>https://www.deepoint.cn/en/message_sent/</loc>
     <xhtml:link
@@ -165,18 +128,6 @@
                 href="https://www.deepoint.cn/en/author/mark-dinn/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/en/service/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://www.deepoint.cn/service/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://www.deepoint.cn/en/service/"
-                />
-  </url><url>
     <loc>https://www.deepoint.cn/en/project/</loc>
     <xhtml:link
                 rel="alternate"
@@ -187,6 +138,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://www.deepoint.cn/en/project/"
+                />
+  </url><url>
+    <loc>https://www.deepoint.cn/en/service/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://www.deepoint.cn/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://www.deepoint.cn/en/service/"
                 />
   </url>
 </urlset>

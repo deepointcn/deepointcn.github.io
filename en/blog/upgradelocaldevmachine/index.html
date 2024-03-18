@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head>
+<html lang="en-US"><head>
   <meta charset="utf-8">
-  <title>Categories</title>
+  <title>Upgrade local development environment</title>
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="升级D365 F&amp;O 本地开发环境">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.118.2">
 
@@ -16,12 +16,14 @@
       <meta property="og:image:width" content="816">
       <meta property="og:image:height" content="183">
       <meta property="og:image:type" content="image/png">
-  <meta name="twitter:title" content="Categories"/>
-  <meta name="twitter:description" content="This is meta description"/>
-  <meta property="og:title" content="Categories" />
-<meta property="og:description" content="This is meta description" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.deepoint.cn/categories/" />
+  <meta name="twitter:title" content="Upgrade local development environment"/>
+  <meta name="twitter:description" content="升级D365 F&amp;O 本地开发环境"/>
+  <meta property="og:title" content="Upgrade local development environment" />
+<meta property="og:description" content="升级D365 F&amp;O 本地开发环境" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.deepoint.cn/en/blog/upgradelocaldevmachine/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-09-08T11:00:28+08:00" />
+<meta property="article:modified_time" content="2023-09-08T11:00:28+08:00" />
 
   
 
@@ -62,24 +64,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/%20/">
-              <img src="/images/logo.png" alt="深点咨询 | D365 F&amp;O ERP" width="250px"
+            <a class="navbar-brand" href="/en/%20/">
+              <img src="/images/logo.png" alt="Deepoint D365 F&amp;O ERP Consulting China" width="250px"
                 class="img-responsive">
             </a>
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/" >首页</a></li><li><a href="/service/" >服务</a></li><li><a href="/project/" >客户案例</a></li><li><a href="/about-us/" >关于我们</a></li><li><a href="/contact/" >联系我们</a></li>
+              <li><a href="/en/" >Home</a></li><li><a href="/en/service/" >Services</a></li><li><a href="/en/project/" >References</a></li><li><a href="/en/about-us/" >About us</a></li><li><a href="/en/contact/" >Contact</a></li><li><a href="/en/blog/" 
+                  class="current-parent" >Blog</a></li>
 
               
-              <li class="languageSelect" style="display: none;"><a id="cn" href="/categories/"
+              <li class="languageSelect" style="display: none;"><a id="en" href="/en/blog/upgradelocaldevmachine/"
                   class="selected">
-                  中文</a>
-              </li>
-              <li class="languageSelect" style="display: none;"><a id="en" href="/en/categories/">
                   EN</a>
               </li>
+              
 
               <input name="switch" type="checkbox" checked>
 
@@ -155,7 +156,7 @@
       <div class="col-md-12">
         <div class="block">
           <h1></h1>
-          <p></p>
+          <p>升级D365 F&amp;O 本地开发环境</p>
         </div>
       </div>
     </div>
@@ -166,32 +167,135 @@
 
 
 
-<div class="page-wrapper">
+<section class="page-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        
+        <div class="post post-single">
+          <h2 class="post-title">Upgrade local development environment</h2>
+          <div class="post-meta">
+            <ul>
+              <li><i class="ion-calendar"></i> September 8, 2023</li>
+              <li><i class="ion-android-people"></i>
+                Posted by
+                <a class="text-primary" href="/en/author/jim-ji">Jim Ji</a>
+              </li>
+              <li><i class="ion-pricetags"></i>
+                <a href="/en/tags/provision">Provision</a>
+              </li>
+            </ul>
+          </div>
+          <div class="post-thumb">
+            
+          </div>
+          <div class="post-content post-excerpt">
+            <ol>
+<li>
+<p>Sign in to Microsoft Lifecycle Services (LCS): <url><a href="https://lcs.dynamics.com/v2">https://lcs.dynamics.com/v2</a></url>, Click ‘Shared Asset Library’.<br>
+<img src="/images/blog/LocalDevMachineProvision/LCSPortal.png" alt="LCSPortal"></p>
+</li>
+<li>
+<p>Click on ‘Downloadable VHD’. Download all the parts of the latest version on your local machine.<br>
+<img src="/images/blog/LocalDevMachineProvision/DowloadVHD.png" alt="DowloadVHD"></p>
+</li>
+<li>
+<p>Double click and execute the ‘*.part001.exe’, Set the destination path where you want to extract the VHD.
+<img src="/images/blog/LocalDevMachineProvision/Unzip.png" alt="Unzip"></p>
+</li>
+<li>
+<p>Open ‘Hyper-V Manager’, Click ‘New’ on the right-side action bar. After that, click ‘Virtual Machine’. Specify the name of the VM, and set the location of the VM. Click ‘Next’.
+<img src="/images/blog/LocalDevMachineProvision/NewVM.png" alt="NewVM"><br>
+Select <strong>&ldquo;Generation 1&rdquo;</strong>, click &lsquo;Next&rsquo;
+<img src="/images/blog/LocalDevMachineProvision/Generation1.png" alt="Generation1"><br>
+Allocate enough memory (64G) to the VM to ensure it runs smoothly, click &lsquo;Next&rsquo;
+<img src="/images/blog/LocalDevMachineProvision/Memory.png" alt="Memory"><br>
+Select &lsquo;Use an existing virtual hard disk&rsquo;. Set the path of the extracted VHD file from previous step<br>
+<img src="/images/blog/LocalDevMachineProvision/Harddisk.png" alt="Harddisk"><br>
+Click &lsquo;Finish&rsquo; to complete the VM importing.
+<img src="/images/blog/LocalDevMachineProvision/Summary.png" alt="Summary"></p>
+</li>
+<li>
+<p>Go back to &lsquo;Hyper-V Manager&rsquo;, the new VM &lsquo;Deepoint_Dev_V36&rsquo; is created, select it, and click &lsquo;Settings&rsquo;, click on the &lsquo;Processor&rsquo; from the left bar, assign proper number of CPU to this VM<br>
+<img src="/images/blog/LocalDevMachineProvision/CPU.png" alt="CPU"></p>
+</li>
+<li>
+<p>Connect to the newly created VM, the default password for the VM is <strong>&ldquo;pass@word1&rdquo;</strong>. Check whether the VM&rsquo;s windows license is exppired or not. If windows license is expired, open the command prompt and run as &lsquo;administrator&rsquo;, To reset the evaluation period, type <strong>‘slmgr –rearm’</strong> in the command prompt and press Enter button.
+<img src="/images/blog/LocalDevMachineProvision/Evaluation.png" alt="Evaluation"></p>
+</li>
+<li>
+<p><strong>Change computer name</strong> is mandatory for DevOps management, restart the VM.
+<img src="/images/blog/LocalDevMachineProvision/ChangeName.png" alt="ChangeName"></p>
+</li>
+<li>
+<p>Click &lsquo;AdminUserProvisioningTool&rsquo; on desktop and enter your corporate email address. You will get an error &ldquo;The value&rsquo;s length for key &lsquo;password&rsquo; exceeds it&rsquo;s limit of 128&rdquo;.
+<img src="/images/blog/LocalDevMachineProvision/AdminUserProvisioning.png" alt="AdminUserProvisioning"></p>
+</li>
+<li>
+<p>To resolve the above error, Go to <a href="https://portal.azure.com">https://portal.azure.com</a> &gt; Active Directory &gt; App Registration and register a new App. Provide the One-Box URL as the response address. Copy the AppID to your clipboard.
+<img src="/images/blog/LocalDevMachineProvision/Application.png" alt="Application"><br>
+<img src="/images/blog/LocalDevMachineProvision/RedirectURLs.png" alt="RedirectURLs"></p>
+</li>
+<li>
+<p>Execute the ‘Generate Self-Signed Certificates’ PowerShell script from the Desktop of the VM. Provide the AppID from the App Registration and press Enter. Type &lsquo;N&rsquo; and press Enter.
+<img src="/images/blog/LocalDevMachineProvision/GenerateSelfSignedCertificates.png" alt="GenerateSelfSignedCertificates"></p>
+</li>
+<li>
+<p>Now again Click on the &lsquo;AdminUserProvisioningTool&rsquo; and enter corporate email address.
+<img src="/images/blog/LocalDevMachineProvision/AdminUserProvisioning2.png" alt="AdminUserProvisioning2"></p>
+</li>
+<li>
+<p>Now login to D365: <strong><a href="https://usnconeboxax1aos.cloud.onebox.dynamics.com">https://usnconeboxax1aos.cloud.onebox.dynamics.com</a></strong> with the same email address which was set in &lsquo;AdminUserProvisioningTool&rsquo;.
+<img src="/images/blog/LocalDevMachineProvision/D365ERP.png" alt="D365ERP"></p>
+</li>
+</ol>
 
-        
-        
+          </div>
+          
+        </div>
       </div>
       <div class="col-md-4">
         <aside class="sidebar"><div class="widget widget-latest-post">
     <h4 class="widget-title">Latest Posts</h4>
     
+    <div class="media">
+      <a class="pull-left" href="/en/blog/upgradelocaldevmachine/">
+        
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="/en/blog/upgradelocaldevmachine/">Upgrade local development environment</a></h4>
+        <p>Sign in to Microsoft Lifecycle Services (LCS): …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="/en/blog/localdevmachineprovision/">
+        
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="/en/blog/localdevmachineprovision/">Provision local development machine</a></h4>
+        <p>Sign in to Microsoft Lifecycle Services (LCS): …</p>
+      </div>
+    </div>
+    
   </div>
 <div class="widget widget-category">
   <h4 class="widget-title">Categories</h4>
+  <ul class="widget-category-list">
+    <li><a href="/en/categories/techical-development/">Techical Development</a></li>
+  </ul>
 </div>
 <div class="widget widget-tag">
-  <h4 class="widget-title">标签</h4>
+  <h4 class="widget-title">Tags</h4>
+  <ul class="widget-tag-list">
+    <li><a href="/en/tags/provision/">Provision</a></li>
+  </ul>
 </div>
 </aside>
 
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
 
@@ -215,15 +319,15 @@
           <p>导航</p>
           <ul>
             
-            <li><a href="/">首页</a></li>
+            <li><a href="/en/">Home</a></li>
             
-            <li><a href="/service/">服务</a></li>
+            <li><a href="/en/service/">Services</a></li>
             
-            <li><a href="/project/">客户案例</a></li>
+            <li><a href="/en/project/">References</a></li>
             
-            <li><a href="/about-us/">关于我们</a></li>
+            <li><a href="/en/about-us/">About us</a></li>
             
-            <li><a href="/contact/">联系我们</a></li>
+            <li><a href="/en/contact/">Contact</a></li>
             
           </ul>
         </div>
