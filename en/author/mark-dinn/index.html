@@ -64,24 +64,26 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/en/">
-              <img src="/images/logo.png" alt="Deepoint D365 F&amp;O ERP Consulting China" width="250px" class="img-responsive">
+            <a class="navbar-brand" href="/en/%20/">
+              <img src="/images/logo.png" alt="Deepoint D365 F&amp;O ERP Consulting China" width="250px"
+                class="img-responsive">
             </a>
           </div>
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/en/">Home</a></li><li><a href="/en/service/">Services</a></li><li><a href="/en/project/">References</a></li><li><a href="/en/about-us/">About us</a></li><li><a href="/en/contact/">Contact</a></li><li><a href="/en/blog/">Blog</a></li>
+              <li><a href="/en/" >Home</a></li><li><a href="/en/service/" >Services</a></li><li><a href="/en/project/" >References</a></li><li><a href="/en/about-us/" >About us</a></li><li><a href="/en/contact/" >Contact</a></li><li><a href="/en/blog/" >Blog</a></li>
 
               
+              <li class="languageSelect" style="display: none;"><a id="cn" href="/author/mark-dinn/">
+                  中文</a>
+              </li><li class="languageSelect" style="display: none;"><a id="en" href="/en/author/mark-dinn/"
+                  class="selected">
+                  EN</a>
+              </li>
+              
 
-
-              <li class="languageSelect"><a id="cn" href="/author/mark-dinn/">
-                    中文</a>
-                  </li><li class="languageSelect"><a id="en" href="/en/author/mark-dinn/" class="selected">
-                    EN</a>
-                  </li>
-                  
+              <input name="switch" type="checkbox" checked>
 
               
               <li class="telphone">
@@ -95,7 +97,58 @@
     </div>
   </div>
 </header>
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+<script>
+  
+  
+  var switchState = localStorage.getItem('switchState') === 'true' || false;
+  
+  
+  $("[name='switch']").bootstrapSwitch({
+      onText: "中文",
+      offText: "英文",
+      onColor: "success",
+      offColor: "warning",
+      
+      
+      size: "normal",
+      state: switchState, 
+      onInit: function(event, state) {
+          
+          if (state) {
+              $(this).closest('.bootstrap-switch-wrapper').addClass('bootstrap-switch-on');
+          } else {
+              $(this).closest('.bootstrap-switch-wrapper').removeClass('bootstrap-switch-on');
+          }
+      },
+      onSwitchChange: function(event, state) {
+          
+          localStorage.setItem('switchState', state);
+          
+          if (state) {
+              window.location.href = $("a#cn").attr('href');
+          } else {
+              window.location.href = $("a#en").attr('href');
+          }
+      }
+  });
+</script>
+<style>
+  .bootstrap-switch{
+    border-radius:10px;
+  }
+  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{
+    background: #468be4;
+  }
+  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning{
+    background: #e76d57;
+  }
+</style>
 
 
 <section class="page-title bg-2" style="background-image: url('/images/feature-bg.jpg');">
@@ -166,42 +219,47 @@ Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac
         <img src="/images/deepoint-logo.png" alt="">
         <img src="/images/microsoft-partner.png" alt="">
       </div>
-      <div class="column2">
-        <p>导航</p>
-        <ul>
-          
-          <li><a href="/en/">Home</a></li>
-          
-          <li><a href="/en/service/">Services</a></li>
-          
-          <li><a href="/en/project/">References</a></li>
-          
-          <li><a href="/en/about-us/">About us</a></li>
-          
-          <li><a href="/en/contact/">Contact</a></li>
-          
-        </ul>
-      </div>
-      <div class="column3">
-        <p>联系我们</p>
-        <p>Jim.Ji@deepoint.cn</p>
-        <p>+86 17601321600</p>
-        <div class="connection">
-          <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
-          <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
-          <img class="connection-icon" id="weChat" src="/images/icon-connection-3.png" alt="">
-          <img class="qrcode" id="qrcode" src="/images/icon-weChat-qrcode.jpg" alt="">
+      <div class="content">
+        <div class="column2">
+          <p>导航</p>
+          <ul>
+            
+            <li><a href="/en/">Home</a></li>
+            
+            <li><a href="/en/service/">Services</a></li>
+            
+            <li><a href="/en/project/">References</a></li>
+            
+            <li><a href="/en/about-us/">About us</a></li>
+            
+            <li><a href="/en/contact/">Contact</a></li>
+            
+          </ul>
+        </div>
+        <div class="column3">
+          <p>联系我们</p>
+          <p>Jim.Ji@deepoint.cn</p>
+          <p>Service@deepoint.cn</p>
+          <p>+86 17601321600</p>
+          <div class="connection">
+            <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
+            <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
+            <img class="connection-icon" id="weChat" src="/images/icon-connection-3.png" alt="">
+            <img class="qrcode" id="qrcode" src="/images/icon-weChat-qrcode.jpg" alt="">
+          </div>
         </div>
       </div>
       <div class="column4">
         <p>地址</p>
-        <p>Shanghai Office <BR>
-          1st Luonan village, building 44 room 501, Shanghai
-        </p>
-        <p>  
-          Shenzhen Office <BR>
-          Room 604 Building 9, TaoYuanJu 1st District Taoyuan Community, Shenzhen
-        </p>
+        <div class="address">
+          <p>Shanghai Office <BR>
+            1st Luonan village, building 44 room 501, Shanghai
+          </p>
+          <p>  
+            Shenzhen Office <BR>
+            Room 604 Building 9, TaoYuanJu 1st District Taoyuan Community, Shenzhen
+          </p>
+        </div>
       </div>
     </div>
     <div class="copyright">Copyright 2024 © Deepoint Consulting. All Rights Reserved.</div>
