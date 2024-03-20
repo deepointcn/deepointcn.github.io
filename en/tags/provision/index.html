@@ -57,7 +57,7 @@
         <nav class="navbar">
           
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <button type="button" class="navbar-toggle collapsed" id="navbar-button">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -70,7 +70,7 @@
           
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/en/" >Home</a></li><li><a href="/en/service/" >Services</a></li><li><a href="/en/project/" >References</a></li><li><a href="/en/about-us/" >About us</a></li><li><a href="/en/contact/" >Contact</a></li><li><a href="/en/blog/" 
+              <li><a href="/en/" >Home</a></li><li><a href="/en/service/" >Services</a></li><li><a href="/en/reference/" >References</a></li><li><a href="/en/about-us/" >About us</a></li><li><a href="/en/contact/" >Contact</a></li><li><a href="/en/blog/" 
                   class="current-parent" >Blog</a></li>
 
               
@@ -95,6 +95,28 @@
   </div>
 </header>
  
+ <div class="navigation2" id="navigation2">
+  <ul class="navigation2_nav">
+    <li><a href="/en/" >Home</a></li><li><a href="/en/service/" >Services</a></li><li><a href="/en/reference/" >References</a></li><li><a href="/en/about-us/" >About us</a></li><li><a href="/en/contact/" >Contact</a></li><li><a href="/en/blog/" 
+        class="current-parent" >Blog</a></li>
+
+    
+    <li class="languageSelect" style="display: none;"><a id="en" href="/en/tags/provision/"
+        class="selected">
+        EN</a>
+    </li>
+    
+
+    <input name="switch" type="checkbox" checked>
+
+    
+    <li class="telphone">
+      <a href="mailto:">Service@deepoint.cn</a>
+    </li>
+  </ul>
+ </div>
+ <div class="zzc"></div>
+ 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -103,12 +125,74 @@
 <script>
   
   
+  
+  window.addEventListener('resize', function() {
+    document.getElementById('navigation2').style.display = 'none'; 
+    document.getElementsByClassName('zzc')[0].style.display = 'none'; 
+    document.getElementById('navigation').style.display = 'none'; 
+  })
+
+  $('#navbar-button').click(function(event) {
+    toggleNavbar();
+  })
+  
+  $('.zzc').click(function(event) {
+    var nav2 = document.getElementById('navigation2');
+    var zzc = document.getElementsByClassName('zzc')[0];
+    nav2.style.display = 'none'; 
+    zzc.style.display = 'none'; 
+  })
+  
+  var butn = false;
+  function toggleNavbar() {
+    var nav1 = document.getElementById('navigation');
+    var nav2 = document.getElementById('navigation2');
+    var zzc = document.getElementsByClassName('zzc')[0];
+    
+    if (window.innerWidth > 912) {
+      if (!butn) {
+        nav2.style.display = 'none'; 
+        zzc.style.display = 'none'; 
+        nav1.style.display = 'block'; 
+
+        
+      }else{
+        
+        nav2.style.display = 'none'; 
+        zzc.style.display = 'none'; 
+        nav1.style.display = 'none'; 
+
+        
+      }
+      butn =!butn
+    } else {
+      if (!butn) {
+        nav2.style.display = 'block'; 
+        zzc.style.display = 'block'; 
+        nav1.style.display = 'none'; 
+
+        
+      }else{
+        nav1.style.display = 'none'; 
+        nav2.style.display = 'none'; 
+        zzc.style.display = 'none'; 
+
+        
+      }
+      butn =!butn
+    }
+
+    
+  }
+
+  
+  
   var switchState = localStorage.getItem('switchState') === 'true' || false;
   
   
   $("[name='switch']").bootstrapSwitch({
       onText: "中文",
-      offText: "英文",
+      offText: "EN",
       onColor: "success",
       offColor: "warning",
       
@@ -117,10 +201,25 @@
       state: switchState, 
       onInit: function(event, state) {
           
-          if (state) {
-              $(this).closest('.bootstrap-switch-wrapper').addClass('bootstrap-switch-on');
+          
+          var hasOffClass = $('.bootstrap-switch-wrapper')[0].classList.contains('bootstrap-switch-off');
+          
+          if (hasOffClass) {
+              
+              $('.bootstrap-switch-off div span:nth-child(1)').css('background', '#468be4');
+              $('.bootstrap-switch-off div  span:nth-child(3)').html('EN')
+              $('.bootstrap-switch-off div  span:nth-child(3)').css('background', '#e76d57');
+              $('.bootstrap-switch-off div  span:nth-child(1)').css('color', '#e76d5700');
+              $('.bootstrap-switch-off div  span:nth-child(3').css('color', '#ffffff');
+              $('.bootstrap-switch-label').html('中文')
           } else {
-              $(this).closest('.bootstrap-switch-wrapper').removeClass('bootstrap-switch-on');
+              
+              $('.bootstrap-switch-on div span:nth-child(1)').html('中文')
+              $('.bootstrap-switch-on div span:nth-child(1)').css('background', '#e76d57');
+              $('.bootstrap-switch-on div span:nth-child(3)').css('background', '#468be4');
+              $('.bootstrap-switch-on div span:nth-child(1)').css('color', '#ffffff');
+              $('.bootstrap-switch-on div span:nth-child(3)').css('color', '#e76d5700');
+              $('.bootstrap-switch-label').html('EN')
           }
       },
       onSwitchChange: function(event, state) {
@@ -139,11 +238,67 @@
   .bootstrap-switch{
     border-radius:10px;
   }
-  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{
-    background: #468be4;
+  .bootstrap-switch-label{
+    color:#468be4 !important;
   }
-  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning{
-    background: #e76d57;
+  .section-title {
+    p{
+      font-size: 26px !important;
+    }
+  }
+  .bootstrap-switch-container{
+    font-family: microsoft yahei, segoe ui, WeblySleek UIBold, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+  }
+  .navigation2{
+    display: none;
+    padding-top: 6vh;
+    z-index: 9;
+    position: fixed;
+    float: right;
+    margin-left: 45%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(255deg, #fef3f3, #ffffff, #f3f7fe);
+    box-shadow: -1px 8px 20px #d7d7d7;
+    border-radius: 5px 0 0 5px;
+  }
+  .navigation2_nav{
+    line-height: unset;
+    li a{
+      color: #72abf5 !important;
+    }
+    font-family: microsoft yahei, segoe ui, WeblySleek UIBold, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: none;
+    line-height: 35px;
+    margin: 20px;
+    a:hover{
+      color: #e76d57;
+      background: 0 0;
+    }
+    .telphone{
+      a{
+        color: white !important;
+      }
+      margin-left: -5px;
+      margin-top: 20px;
+    }
+    .languageSelect{
+      margin-top: 30px;
+    }
+  }
+  .navigation2_nav li:nth-child(6){
+      margin-bottom: 60px;
+  }
+  .zzc{
+    display: none;
+    backdrop-filter: blur(10px) brightness(0.85);
+    z-index: 8;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
   }
 </style>
 
@@ -281,6 +436,7 @@ Double click and execute the ‘*.</p>
         <img src="/images/deepoint-logo.png" alt="">
         <img src="/images/microsoft-partner.png" alt="">
       </div>
+      <br/>
       <div class="content">
         <div class="column2">
           <p>导航</p>
@@ -290,7 +446,7 @@ Double click and execute the ‘*.</p>
             
             <li><a href="/en/service/">Services</a></li>
             
-            <li><a href="/en/project/">References</a></li>
+            <li><a href="/en/reference/">References</a></li>
             
             <li><a href="/en/about-us/">About us</a></li>
             
@@ -298,11 +454,11 @@ Double click and execute the ‘*.</p>
             
           </ul>
         </div>
-        <div class="column3">
+        <div class="column3" >
           <p>联系我们</p>
-          <p>Jim.Ji@deepoint.cn</p>
-          <p>Service@deepoint.cn</p>
-          <p>+86 17601321600</p>
+          <p><i class="ion-person"></i> Jim.Ji@deepoint.cn</p>
+          <p><i class="ion-briefcase"></i> Service@deepoint.cn</p>
+          <p><i class="ion-ios-telephone"></i> +86-17601321600</p>
           <div class="connection">
             <img class="connection-icon" src="/images/icon-connection-1.png" alt="">
             <img class="connection-icon" src="/images/icon-connection-2.png" alt="">
@@ -397,6 +553,19 @@ Double click and execute the ‘*.</p>
 
 .cookie-box-hide {
   display: none;
+}
+ 
+@media (max-width: 768px) {
+  .column3 {
+    min-width: 54vw;
+  }
+}
+  
+ 
+@media (min-width: 769px) {
+  .column3 {
+    min-width: 51%;
+  }
 }
 </style>
 

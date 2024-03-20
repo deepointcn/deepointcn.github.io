@@ -128,16 +128,16 @@
                 href="https://www.deepoint.cn/en/author/mark-dinn/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/en/project/</loc>
+    <loc>https://www.deepoint.cn/en/reference/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://www.deepoint.cn/project/"
+                href="https://www.deepoint.cn/reference/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://www.deepoint.cn/en/project/"
+                href="https://www.deepoint.cn/en/reference/"
                 />
   </url><url>
     <loc>https://www.deepoint.cn/en/service/</loc>

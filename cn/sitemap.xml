@@ -98,16 +98,16 @@
                 href="https://www.deepoint.cn/about-us/"
                 />
   </url><url>
-    <loc>https://www.deepoint.cn/project/</loc>
+    <loc>https://www.deepoint.cn/reference/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://www.deepoint.cn/en/project/"
+                href="https://www.deepoint.cn/en/reference/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://www.deepoint.cn/project/"
+                href="https://www.deepoint.cn/reference/"
                 />
   </url><url>
     <loc>https://www.deepoint.cn/</loc>
