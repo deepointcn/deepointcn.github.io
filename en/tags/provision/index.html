@@ -5,7 +5,7 @@
 
   <!-- Mobile responsive metadata -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Deepoint Consulting is Microsoft Partner in China delivering Dynamics 365 ERP &amp; Power Platform solutions to worldwide customers. Contact us at Jim.Ji@deepoint.cn for implementation, development, support and consulting services.">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.118.2">
 
@@ -17,9 +17,9 @@
       <meta property="og:image:height" content="183">
       <meta property="og:image:type" content="image/png">
   <meta name="twitter:title" content="Provision"/>
-  <meta name="twitter:description" content="This is meta description"/>
+  <meta name="twitter:description" content="Deepoint Consulting is Microsoft Partner in China delivering Dynamics 365 ERP &amp; Power Platform solutions to worldwide customers. Contact us at Jim.Ji@deepoint.cn for implementation, development, support and consulting services."/>
   <meta property="og:title" content="Provision" />
-<meta property="og:description" content="This is meta description" />
+<meta property="og:description" content="Deepoint Consulting is Microsoft Partner in China delivering Dynamics 365 ERP &amp; Power Platform solutions to worldwide customers. Contact us at Jim.Ji@deepoint.cn for implementation, development, support and consulting services." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.deepoint.cn/en/tags/provision/" />
 
@@ -187,6 +187,23 @@
 
   
   
+  $(document).ready(function() {
+      var url = window.location.href;
+      if (url.includes('/en/')) {
+        console.log('有');
+        $('.bootstrap-switch-wrapper')[0].className = 'bootstrap-switch-off bootstrap-switch-normal bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate'
+        off();
+        $('.bootstrap-switch-container').attr('style', 'width: 156px; margin-left: -52px;');
+        
+      }else{
+        console.log('无');
+        $('.bootstrap-switch-wrapper')[0].className = 'bootstrap-switch-on bootstrap-switch-normal bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate'
+        on();
+        $('.bootstrap-switch-container').attr('style', 'width: 156px; margin-left: 0px;');
+      }
+  });
+  
+  
   var switchState = localStorage.getItem('switchState') === 'true' || false;
   
   
@@ -206,20 +223,10 @@
           
           if (hasOffClass) {
               
-              $('.bootstrap-switch-off div span:nth-child(1)').css('background', '#468be4');
-              $('.bootstrap-switch-off div  span:nth-child(3)').html('EN')
-              $('.bootstrap-switch-off div  span:nth-child(3)').css('background', '#e76d57');
-              $('.bootstrap-switch-off div  span:nth-child(1)').css('color', '#e76d5700');
-              $('.bootstrap-switch-off div  span:nth-child(3').css('color', '#ffffff');
-              $('.bootstrap-switch-label').html('中文')
+              off();
           } else {
               
-              $('.bootstrap-switch-on div span:nth-child(1)').html('中文')
-              $('.bootstrap-switch-on div span:nth-child(1)').css('background', '#e76d57');
-              $('.bootstrap-switch-on div span:nth-child(3)').css('background', '#468be4');
-              $('.bootstrap-switch-on div span:nth-child(1)').css('color', '#ffffff');
-              $('.bootstrap-switch-on div span:nth-child(3)').css('color', '#e76d5700');
-              $('.bootstrap-switch-label').html('EN')
+              on();
           }
       },
       onSwitchChange: function(event, state) {
@@ -233,6 +240,22 @@
           }
       }
   });
+  function off() {
+    $('.bootstrap-switch-off div  span:nth-child(3)').html('EN')
+    $('.bootstrap-switch-off div span:nth-child(1)').css('background', '#468be4');
+    $('.bootstrap-switch-off div  span:nth-child(3)').css('background', '#e76d57');
+    $('.bootstrap-switch-off div  span:nth-child(1)').css('color', '#e76d5700');
+    $('.bootstrap-switch-off div  span:nth-child(3').css('color', '#ffffff');
+    $('.bootstrap-switch-label').html('中文')
+  }
+  function on() {
+    $('.bootstrap-switch-on div span:nth-child(1)').html('中文')
+    $('.bootstrap-switch-on div span:nth-child(1)').css('background', '#e76d57');
+    $('.bootstrap-switch-on div span:nth-child(3)').css('background', '#468be4');
+    $('.bootstrap-switch-on div span:nth-child(1)').css('color', '#ffffff');
+    $('.bootstrap-switch-on div span:nth-child(3)').css('color', '#e76d5700');
+    $('.bootstrap-switch-label').html('EN')
+  }
 </script>
 <style>
   .bootstrap-switch{
@@ -252,7 +275,6 @@
   }
   .navigation2{
     display: none;
-    padding-top: 6vh;
     z-index: 9;
     position: fixed;
     float: right;
@@ -290,7 +312,7 @@
     }
   }
   .navigation2_nav li:nth-child(6){
-      margin-bottom: 60px;
+      margin-bottom: 3%;
   }
   .zzc{
     display: none;
@@ -299,6 +321,11 @@
     position: fixed;
     height: 100vh;
     width: 100%;
+  }
+  @media (max-width:360px) {
+    .navigation2{
+      padding-top: 6vh;
+    }
   }
 </style>
 
@@ -435,6 +462,7 @@ Double click and execute the ‘*.</p>
       <div class="column1">
         <img src="/images/deepoint-logo.png" alt="">
         <img src="/images/microsoft-partner.png" alt="">
+        <img src="/images/devops.png" alt="">
       </div>
       <br/>
       <div class="content">
@@ -468,8 +496,11 @@ Double click and execute the ‘*.</p>
         </div>
       </div>
       <div class="column4">
-        <p>地址</p>
+        <p>关于我们</p>
         <div class="address">
+          <p>
+            Deepoint Consulting is Microsoft Partner in China delivering Dynamics 365 ERP & Power Platform solutions to worldwide customers. Contact us at Jim.Ji@deepoint.cn for implementation, development, support and consulting services.
+          </p>
           <p>Shanghai Office <BR>
             1st Luonan village, building 44 room 501, Shanghai
           </p>
